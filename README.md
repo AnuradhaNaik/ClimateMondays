@@ -4,9 +4,7 @@ Website for a movement to make sure that the United States moves off fossil fuel
 
 ## Organizations Involved
 *[350NYC](https://350nyc.org)
-
 *[Food and Water Watch](https://www.foodandwaterwatch.org/state/new-york)
-
 *[Sunrise Movement NYC](https://twitter.com/sunrisemvmtnyc)
 
 ## Status
