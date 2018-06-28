@@ -4,9 +4,13 @@ var header = require('gulp-header');
 var cleanCSS = require('gulp-clean-css');
 var rename = require("gulp-rename");
 var uglify = require('gulp-uglify');
+var districts = require('congressional-districts');
 var pkg = require('./package.json');
 var browserSync = require('browser-sync').create();
-
+var zipcode = "53013";
+var district = '3';
+var confirmed = districts.getDistricts(zipcode);
+var St=districts.getstate(zipcode);
 // Set the banner content
 var banner = ['/*!\n',
   ' * Start Bootstrap - <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n',
@@ -71,6 +75,11 @@ gulp.task('css:compile', function() {
       outputStyle: 'expanded'
     }).on('error', sass.logError))
     .pipe(gulp.dest('./css'))
+});
+
+gulp.task('congress',function(){
+
+console.log(confirmed+"  "+St);
 });
 
 // Minify CSS
