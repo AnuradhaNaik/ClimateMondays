@@ -66,6 +66,12 @@ gulp.task('vendor', function() {
     ])
     .pipe(gulp.dest('./vendor/scrollreveal'))
 
+    //congressional districts
+    gulp.src([
+      './node_modules/congressional-districts/*'
+    ])
+    .pipe(gulp.dest('./vendor/congressional-districts'))
+
 });
 
 // Compile SCSS
